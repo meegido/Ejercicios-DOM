@@ -1,0 +1,35 @@
+<!doctype html>
+<head>
+<!-- que se añadan nuevos elementos a la lista cada vez que se pulsa sobre el botón -->
+    <script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+        var button = document.getElementById("añadir");
+
+            button.addEventListener("click", function (event) {
+
+                var elementoLista = document.createElement("li");
+                var texto = document.createTextNode("con su texto");
+
+                elementoLista.appendChild(texto);
+
+                var lista = document.getElementById("lista");
+                lista.appendChild(elementoLista);
+
+                var nuevoElemento = "<li> Nuevo elemento </li>";
+                lista.innerHTML = lista.innerHTML + nuevoElemento;
+
+            });
+    });
+    </script>
+</head>
+
+<body>
+    <ul id="lista">
+        <li>Lorem ipsum dolor sit amet</li>
+        <li>Consectetuer adipiscing elit</li>
+        <li>Sed mattis enim vitae orci</li>
+        <li>Phasellus libero</li>
+        <li>Maecenas nisl arcu</li>
+    </ul>
+    <input id="añadir" type="button" value="Añadir elemento">
+</body>
