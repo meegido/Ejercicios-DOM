@@ -1,13 +1,16 @@
-<!doctype html>
+ <!doctype html>
 <head>
     <script>
     //Número de enlaces de la página
         document.addEventListener("DOMContentLoaded", function (event) {
             var enlaces = document.getElementsByTagName("a");
+            console.log(enlaces);
 
         //Dirección a la que enlaza el penúltimo enlace
             var penultimoEnlace = document.getElementsByTagName("a").length-2;
-                document.getElementsByTagName("a") [5].href;
+                var direccionPenultimo = document.getElementsByTagName("a") [5].href;
+                console.log(direccionPenultimo);
+
 
         //Numero de enlaces que enlazan a http://prueba
             var contador = 0;
