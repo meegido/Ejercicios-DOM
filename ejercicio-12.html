@@ -6,16 +6,14 @@
     <script>
          document.addEventListener("DOMContentLoaded", function (event) {
 
-            var button = document.getElementById("enlace");
+            var enlace = document.getElementById("enlace");
 
-                button.addEventListener("click", function (event) {
+                enlace.addEventListener("click", function (event) {
                     var adicional = document.getElementById("adicional");
                     adicional.style.display = "inline";
-                });
-
-                button.addEventListener("click", function (event) {
                     this.style.display = "none";
                 });
+
         });
     </script>
 </head>
